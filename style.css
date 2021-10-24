@@ -1,4 +1,4 @@
-vis {
+.vis {
     width: 60%;
     display: flex;
     align-items: center;
@@ -8,7 +8,7 @@ vis {
     border-width: 1px;
 }
 
-topbar {
+.topbar {
     background-color: blue;
     display: flex;
     align-items: center;
