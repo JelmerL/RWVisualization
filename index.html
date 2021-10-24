@@ -7,13 +7,20 @@
 </head>
 
 <body>  
-  <h1>Food Type Chart</h1>
-    <div id="vis"></div>
-  <script>
+<!-- constructing top bar-->
+  <div id="top bar">
+
+
+  </div>
+  
+<!-- adding first chart -->
+  <div id="vis"></div>
+    <h1>Food Type Chart</h1>
+    <script>
     const spec = "https://raw.githubusercontent.com/JelmerL/RWVisualization/master/bar.vg.json";
   	vegaEmbed("#vis", spec)
       // result.view provides access to the Vega View API
       .then(result => console.log(result))
       .catch(console.warn);
-  </script>
+    </script>
 </body>
