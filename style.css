@@ -1,5 +1,6 @@
 body{
-    padding: 0;
+    padding: 0px;
+    margin:0px;
 }
 
 .topbar {
@@ -7,7 +8,8 @@ body{
     align-items: center;
     justify-content: center;
     height: 100px;
-    background-image: url();
+    background-image: url(https://raw.githubusercontent.com/JelmerL/RWVisualization/master/josefin-WS5yjFjycNY-unsplash.jpg);
+    background-size: cover;
 }
 
 section {
@@ -33,8 +35,6 @@ section {
 h1 {
     text-align: center;
     font-size: 30;
-    color:rgb(233, 233, 73);
-    -webkit-text-stroke-width: .1px;
-    -webkit-text-stroke-color: black;
+    color:rgb(255, 255, 255);
 }
 
