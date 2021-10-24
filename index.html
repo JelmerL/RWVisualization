@@ -8,13 +8,11 @@
 <body>  
   <h1>Foot Type Chart</h1>
     <div id="vis"></div>
-  
   <script>
     const spec = "https://raw.githubusercontent.com/JelmerL/RWVisualization/master/bar.vg.json";
   	vegaEmbed("#vis", spec)
       // result.view provides access to the Vega View API
       .then(result => console.log(result))
       .catch(console.warn);
-
   </script>
 </body>
