@@ -40,8 +40,8 @@
     ],
   
     "axes": [
-      { "orient": "bottom", "scale": "xscale", "labels":true },
-      { "orient": "left", "scale": "yscale", "labels":true }
+      { "orient": "bottom", "scale": "xscale", "labels":true, "labelAngle": 90 },
+      { "orient": "left", "scale": "yscale", "labels":true, "labelAngle":90 }
     ],
   
     "marks": [
