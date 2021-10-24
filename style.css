@@ -15,7 +15,7 @@ section {
 .vis {
     width: 60%;
     display: inline-block;
-    justify-content: center;
+    margin: auto;
     border-style: solid;
     border-color: black;
     border-width: 1px;
