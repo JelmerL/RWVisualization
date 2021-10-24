@@ -1,11 +1,12 @@
 vis {
     width: 60%;
     margin: auto;
+    border: blue;
+    border-width: 1px;
 }
 
 topbar {
     background-color: blue;
     height: 100px;
-    width: 100%;
 }
 
