@@ -50,9 +50,9 @@
         "from": {"data":"table"},
         "encode": {
           "enter": {
-            "x": {"scale": "xscale", "field": "category"},
+            "x": {"scale": "xscale", "field": "food_type"},
             "width": {"scale": "xscale", "band": 1},
-            "y": {"scale": "yscale", "field": "amount"},
+            "y": {"scale": "yscale", "field": "total_ghg_emissions_co2e_per_million_kilocalories_consumed"},
             "y2": {"scale": "yscale", "value": 0}
           },
           "update": {
