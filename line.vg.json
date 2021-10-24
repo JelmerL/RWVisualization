@@ -26,7 +26,7 @@
     ],
     "axes": [
       {"orient": "bottom", "scale": "x", "title":"Year","tickCount":20},
-      {"orient": "left", "scale": "y", "title":"Atmospheric CO₂ Concentration (ppm), NOAA/NASA"}
+      {"orient": "left", "scale": "y", "title":"Atmospheric CO₂ Concentration (ppm)"}
     ],
     "marks":[
       {"type": "line",
@@ -42,4 +42,4 @@
         }
       }
     ]
-}
+  }
