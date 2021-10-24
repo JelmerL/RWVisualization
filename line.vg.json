@@ -36,8 +36,12 @@
             "interpolate": {"value": "linear"},
             "x": {"scale": "x", "field": "date"},
             "y": {"scale": "y", "field": "average"},
-            "stroke": {"value": "steelblue"},
-            "strokeWidth": {"value": 2}
+            "update": {
+              "fillOpacity": {"value": 1}
+            },
+            "hover": {
+              "fillOpacity": {"value": 0.5}
+            }
           }
         }
       }
