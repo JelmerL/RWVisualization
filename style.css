@@ -1,12 +1,17 @@
 vis {
     width: 60%;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: blue;
     border-width: 1px;
 }
 
 topbar {
     background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100px;
 }
 
