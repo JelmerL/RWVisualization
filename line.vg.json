@@ -6,7 +6,7 @@
     "data": [
         {
         "name": "table",
-        "url": "https://api.resourcewatch.org/v1/download/c1a22e2e-6b78-4ccd-b249-77ab0bd58bdd?sql=SELECT date,average  from cli_045_carbon_dioxide_concentration&format=json", "format":{"parse":"auto"}
+        "url": "https://api.resourcewatch.org/v1/download/c1a22e2e-6b78-4ccd-b249-77ab0bd58bdd?sql=SELECT date,average  from cli_045_carbon_dioxide_concentration&format=json", "format":{"parse":"auto"},"transform": [{"type": "collect","sort":{"field": "date"}}]
         }
       ],
        "scales": [
@@ -14,13 +14,13 @@
         "name": "x",
         "type":"time",
         "range": "width",
+        "nice":true,
         "domain": {"data": "table", "field": "date"}
       },
       {
         "name": "y",
         "type": "linear",
         "range": "height",
-        "zero": true,
         "domain": {"data": "table", "field": "average"}
       }
     ],
@@ -37,7 +37,7 @@
             "x": {"scale": "x", "field": "date"},
             "y": {"scale": "y", "field": "average"},
             "stroke": {"value": "steelblue"},
-            "strokeWidth": {"value": 3}
+            "strokeWidth": {"value": 2}
           }
         }
       }
