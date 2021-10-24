@@ -10,8 +10,23 @@
         "url": "https://api.resourcewatch.org/v1/download/c1a22e2e-6b78-4ccd-b249-77ab0bd58bdd?sql=SELECT date,average  from cli_045_carbon_dioxide_concentration&format=json"
       }
     ],
-    "mark": {"type": "line", "interpolate": "monotone"},
+    "mark": {
+        "type": "line", 
+        "interpolate": "monotone"
+    },
     "encoding": {
-      "x": {"timeunit":"year","field": "date"}
-    }
+      "x": {"timeunit":"year","field": "date"},
+      "update": {
+        "fill": {"value": "steelblue"}
+    },
+    "signals": [
+        {
+          "name": "tooltip",
+          "value": {},
+          "on": [
+            {"events": "rect:mouseover", "update": "datum"},
+            {"events": "rect:mouseout",  "update": "{}"}
+          ]
+        }
+      ]
 }
