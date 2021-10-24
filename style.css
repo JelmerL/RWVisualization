@@ -1,21 +1,23 @@
+body{
+    padding: 0;
+}
+
 .topbar {
-    background-color:yellow;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100px;
+    background-image: url();
 }
 
 section {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 50px;
 }
 
 .vis {
-    display: block;
-    margin: auto;
+    display: inline-block;
     padding: 20px;
     border-style: solid;
     border-color: #7e7e7e7b;
@@ -23,7 +25,16 @@ section {
     border-radius: 15px;
 }
 
+.intro{
+    display: inline-block;
+    padding: 20px;
+}
+
 h1 {
     text-align: center;
+    font-size: 30;
+    color:rgb(233, 233, 73);
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: black;
 }
 
