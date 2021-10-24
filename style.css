@@ -19,6 +19,7 @@ section {
     border-style: solid;
     border-color: #7e7e7e;
     border-width: 1px;
+    border-radius: 15px;
 }
 
 h1 {
