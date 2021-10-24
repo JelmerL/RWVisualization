@@ -1,19 +1,21 @@
-.vis {
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-}
-
 .topbar {
-    background-color: blue;
+    background-color:yellow;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100px;
+}
+
+section {
+    width: 100%;
+    border: 1px solid #2d2d2d;
+    display: flex;
+    justify-content: center;
+}
+
+.vis {
+    width: 60%;
+    display: inline-block;
     border-style: solid;
     border-color: black;
     border-width: 1px;
