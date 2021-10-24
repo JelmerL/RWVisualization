@@ -7,16 +7,7 @@
     "data": [
       {
         "name": "table",
-        "values": [
-          {"category": "A", "amount": 28},
-          {"category": "B", "amount": 55},
-          {"category": "C", "amount": 43},
-          {"category": "D", "amount": 91},
-          {"category": "E", "amount": 81},
-          {"category": "F", "amount": 53},
-          {"category": "G", "amount": 19},
-          {"category": "H", "amount": 87}
-        ]
+        "url": "https://api.resourcewatch.org/v1/download/702f4bcb-c376-49b6-9345-cdc8aa989582?sql=SELECT food_type,total_ghg_emissions_co2e_per_million_kilocalories_consumed from foo_046b_food_footprint_calories_wrrupdate&format=json"
       }
     ],
   
