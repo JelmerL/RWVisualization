@@ -9,12 +9,12 @@
 <body>  
 
 <!-- constructing top bar-->
-  <div id="topbar">
+  <div id="topbar" class="topbar">
       <h1>Simple Visualizations Using Vega</h1>
   </div>
 
 <!-- adding first chart -->
-  <div id="vis"></div>
+  <div id="vis" class=vis></div>
     <script>
     const spec = "https://raw.githubusercontent.com/JelmerL/RWVisualization/master/bar.vg.json";
   	vegaEmbed("#vis", spec)
@@ -22,5 +22,5 @@
       .then(result => console.log(result))
       .catch(console.warn);
     </script>
-    
+
 </body>
