@@ -7,8 +7,12 @@
     "data": [
       {
         "name": "table",
-        "url": "https://api.resourcewatch.org/v1/download/702f4bcb-c376-49b6-9345-cdc8aa989582?sql=SELECT food_type,total_ghg_emissions_co2e_per_million_kilocalories_consumed from foo_046b_food_footprint_calories_wrrupdate&format=json"
-      }
+        "url": "https://api.resourcewatch.org/v1/download/702f4bcb-c376-49b6-9345-cdc8aa989582?sql=SELECT food_type,total_ghg_emissions_co2e_per_million_kilocalories_consumed from foo_046b_food_footprint_calories_wrrupdate&format=json",
+        "transform":[{
+            "type": "collect", 
+            "sort":{"field": "total_ghg_emissions_co2e_per_million_kilocalories_consumed"}
+            }]
+    }
     ],
     
     "signals": [
