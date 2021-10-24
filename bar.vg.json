@@ -10,30 +10,30 @@
         "url": "https://api.resourcewatch.org/v1/download/702f4bcb-c376-49b6-9345-cdc8aa989582?sql=SELECT food_type,total_ghg_emissions_co2e_per_million_kilocalories_consumed from foo_046b_food_footprint_calories_wrrupdate&format=json"
       }
     ],
-  
+    
     "signals": [
-      {
-        "name": "tooltip",
-        "value": {},
-        "on": [
-          {"events": "rect:mouseover", "update": "datum"},
-          {"events": "rect:mouseout",  "update": "{}"}
-        ]
-      }
-    ],
-  
+        {
+          "name": "tooltip",
+          "value": {},
+          "on": [
+            {"events": "rect:mouseover", "update": "datum"},
+            {"events": "rect:mouseout",  "update": "{}"}
+          ]
+        }
+      ],
+     
     "scales": [
       {
         "name": "xscale",
         "type": "band",
-        "domain": {"data": "table", "field": "category"},
+        "domain": {"data": "table", "field": "food_type"},
         "range": "width",
         "padding": 0.05,
         "round": true
       },
       {
         "name": "yscale",
-        "domain": {"data": "table", "field": "amount"},
+        "domain": {"data": "table", "field": "total_ghg_emissions_co2e_per_million_kilocalories_consumed"},
         "nice": true,
         "range": "height"
       }
