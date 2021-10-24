@@ -41,7 +41,7 @@
   
     "axes": [
       { "orient": "bottom", "scale": "xscale" },
-      { "orient": "left", "scale": "yscale" }
+      { "orient": "left", "scale": "yscale", "labelAngle": "90" }
     ],
   
     "marks": [
