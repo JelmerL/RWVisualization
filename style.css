@@ -13,8 +13,7 @@ section {
 }
 
 .vis {
-    width: 60%;
-    min-width: 800px;
+    width: 800px;
     display: inline-block;
     margin: auto;
     border-style: solid;
