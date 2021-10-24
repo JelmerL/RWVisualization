@@ -74,9 +74,9 @@
           "update": {
             "x": {"scale": "xscale", "signal": "tooltip.food_type", "band": 0.5},
             "y": {"scale": "yscale", "signal": "tooltip.total_ghg_emissions_co2e_per_million_kilocalories_consumed", "offset": -2},
-            "text": {"signal": "tooltip.amount"},
+            "text": {"signal": "tooltip.total_ghg_emissions_co2e_per_million_kilocalories_consumed"},
             "fillOpacity": [
-              {"test": "isNaN(tooltip.amount)", "value": 0},
+              {"test": "isNaN(tooltip.total_ghg_emissions_co2e_per_million_kilocalories_consumed)", "value": 0},
               {"value": 1}
             ]
           }
