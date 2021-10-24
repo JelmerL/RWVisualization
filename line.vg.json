@@ -37,8 +37,7 @@
             "x": {"scale": "x", "field": "date"},
             "y": {"scale": "y", "field": "average"},
             "stroke": {"value": "steelblue"},
-            "strokeWidth": {"value": 2},
-            "tooltip":{"signal":"{data}"}
+            "strokeWidth": {"value": 2}
           }
         }
       }
