@@ -40,7 +40,7 @@
     ],
   
     "axes": [
-      { "orient": "bottom", "scale": "xscale", "labels":true, "labelAngle": 45, "labelAlign":"left","labelBaseline":"line-bottom" },
+      { "orient": "bottom", "scale": "xscale", "labels":true, "labelAngle": 0, "labelAlign":"left","labelBaseline":"bottom"},
       { "orient": "left", "scale": "yscale"}
     ],
   
