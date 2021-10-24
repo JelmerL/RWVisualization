@@ -15,8 +15,9 @@ section {
 .vis {
     display: block;
     margin: auto;
+    padding: 20px;
     border-style: solid;
-    border-color: black;
+    border-color: #7e7e7e;
     border-width: 1px;
 }
 
