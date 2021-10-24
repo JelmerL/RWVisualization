@@ -40,8 +40,8 @@
     ],
   
     "axes": [
-      { "orient": "bottom", "scale": "xscale", "labels":true, "labelAngle": 45, "labelBaseline":"bottom"},
-      { "orient": "left", "scale": "yscale"}
+      { "orient": "bottom", "scale": "xscale", "labels":true, "labelAngle": -45, "labelAlign":"right","labelBaseline":"middle", "title":"Food Type"},
+      { "orient": "left", "scale": "yscale", "title":"Total CO2e Per Million Kilocalories Consumed"}
     ],
   
     "marks": [
@@ -50,9 +50,9 @@
         "from": {"data":"table"},
         "encode": {
           "enter": {
-            "x": {"scale": "xscale", "field": "food_type", "title": "Food Type"},
+            "x": {"scale": "xscale", "field": "food_type"},
             "width": {"scale": "xscale", "band": 1},
-            "y": {"scale": "yscale", "field": "total_ghg_emissions_co2e_per_million_kilocalories_consumed", "title":"Total CO2 Emissions per million Kilocalories Consumed"},
+            "y": {"scale": "yscale", "field": "total_ghg_emissions_co2e_per_million_kilocalories_consumed"},
             "y2": {"scale": "yscale", "value": 0}
           },
           "update": {
