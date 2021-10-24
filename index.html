@@ -30,6 +30,26 @@
   </section>
 
 <!-- adding first chart -->
+  <section>
+    <div id="vis2" class=vis></div>
+      <script>
+      const spec2 = "https://raw.githubusercontent.com/JelmerL/RWVisualization/master/line.vg.json";
+        vegaEmbed("#vis2", spec2)
+        // result.view provides access to the Vega View API
+        .then(result => console.log(result))
+        .catch(console.warn);
+      </script>
+  </section>
+
+
+  <section>
+    <div class="MainIntro">
+      <p1><b>Food Related Emissions</b></p1>
+      <p1>The Environmental Impact by Food Type (Calories) data set, produced by World Resources Institute in its 2018 World Resources Report: Creating a Sustainable Food Future, illustrates the variations in impact of various food products on land use, freshwater use, and greenhouse gas emissions per million kilocalories consumed.</p1>
+    </div>
+  </section>
+
+<!-- adding second chart -->
 <section>
   <div id="vis" class=vis></div>
     <script>
@@ -41,15 +61,6 @@
     </script>
 </section>
 
-<section>
-    <div id="vis" class=vis></div>
-      <script>
-      const spec2 = "https://raw.githubusercontent.com/JelmerL/RWVisualization/master/line.vg.json";
-        vegaEmbed("#vis", spec2)
-        // result.view provides access to the Vega View API
-        .then(result => console.log(result))
-        .catch(console.warn);
-      </script>
-  </section>
+
 
 </body>
