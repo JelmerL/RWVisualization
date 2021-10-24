@@ -3,7 +3,8 @@ vis {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: blue;
+    border-style: solid;
+    border-color: black;
     border-width: 1px;
 }
 
