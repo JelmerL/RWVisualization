@@ -24,4 +24,18 @@
       .catch(console.warn);
     </script>
 </section>
+
+
+<!-- adding second chart -->
+<section>
+    <div id="vis" class=vis></div>
+      <script>
+      const spec = "https://raw.githubusercontent.com/JelmerL/RWVisualization/master/bar.vg.json";
+        vegaEmbed("#vis", spec)
+        // result.view provides access to the Vega View API
+        .then(result => console.log(result))
+        .catch(console.warn);
+      </script>
+  </section>
+
 </body>
