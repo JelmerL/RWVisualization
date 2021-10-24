@@ -50,9 +50,9 @@
         "from": {"data":"table"},
         "encode": {
           "enter": {
-            "x": {"scale": "xscale", "field": "food_type"},
+            "x": {"scale": "xscale", "field": "food_type", "title": "Food Type"},
             "width": {"scale": "xscale", "band": 1},
-            "y": {"scale": "yscale", "field": "total_ghg_emissions_co2e_per_million_kilocalories_consumed"},
+            "y": {"scale": "yscale", "field": "total_ghg_emissions_co2e_per_million_kilocalories_consumed", "title":"Total CO2 Emissions per million Kilocalories Consumed"},
             "y2": {"scale": "yscale", "value": 0}
           },
           "update": {
