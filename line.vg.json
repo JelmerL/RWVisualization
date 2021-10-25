@@ -61,7 +61,7 @@
           "interpolate": {"value": "linear"},
           "x": {"scale": "x", "field": "date"},
           "y": {"scale": "y", "field": "average"},
-          "stroke": {"value": "steelblue"},
+          "stroke": {"value": "black"},
           "strokeWidth": {"value": 2}
         }
       }
