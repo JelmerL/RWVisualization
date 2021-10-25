@@ -4,7 +4,7 @@ body{
     margin-bottom: 50px;
 }
 
-.topbar {
+.topbar{
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -16,13 +16,13 @@ body{
     background-size: cover;
 }
 
-section {
+section{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.vis {
+.vis{
     display: inline-block;
     padding: 20px;
     border-style: solid;
@@ -65,7 +65,7 @@ section {
     background:white;
 }
 
-h1 {
+h1{
     font-family: "acumin-pro-semi-condensed",sans-serif;
     font-weight: 700;
     letter-spacing: -1.23px;
@@ -74,12 +74,12 @@ h1 {
     color:rgb(255, 255, 255);
 }
 
-p1 {
+p1{
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-p2 {
+p2{
     padding-top: 10px;
     padding-bottom: 10px;
     color:rgb(255, 255, 255);
