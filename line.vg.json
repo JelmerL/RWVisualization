@@ -22,6 +22,8 @@
         "name": "y",
         "type": "linear",
         "range": "height",
+        "nice":true,
+        "zero":false,
         "domain": {"data": "table", "field": "average"}
       }
     ],
