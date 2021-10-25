@@ -29,6 +29,9 @@
       "url": "https://api.resourcewatch.org/v1/download/c1a22e2e-6b78-4ccd-b249-77ab0bd58bdd?sql=SELECT date,average  from cli_045_carbon_dioxide_concentration&format=json", "format":{"parse":"auto"},"transform": [{"type": "collect","sort":{"field": "date"}}]
       }
   ],
+  "title":{
+    "text":"Atmospheric concentration of CO₂ is increasing"
+  },
      "scales": [
     {
       "name": "x",
