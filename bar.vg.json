@@ -45,7 +45,7 @@
   
     "axes": [
       { "orient": "bottom", "scale": "xscale", "labels":true, "labelAngle": -45, "labelAlign":"right","labelBaseline":"middle", "title":"Food Type"},
-      { "orient": "left", "scale": "yscale", "grid":true, "title":"Total CO2e Per Million Kilocalories Consumed"}
+      { "orient": "left", "scale": "yscale", "grid":true, "title":"Total tCO2e Per Million Kilocalories Consumed"}
     ],
     "title":{
       "text":"Environmental Impact by Food Type (Calories)",
