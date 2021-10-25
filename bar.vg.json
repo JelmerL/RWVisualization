@@ -48,7 +48,9 @@
       { "orient": "left", "scale": "yscale", "grid":true, "title":"Total CO2e Per Million Kilocalories Consumed"}
     ],
     "title":{
-      "text":"Environmental Impact by Food Type (Calories)"
+      "text":"Environmental Impact by Food Type (Calories)",
+      "align":"center",
+      "baseline":"top"
     },
     "marks": [
       {
