@@ -28,8 +28,8 @@
       }
     ],
     "axes": [
-      {"orient": "bottom", "scale": "x", "title":"Year","tickCount":20},
-      {"orient": "left", "scale": "y", "title":"Atmospheric CO₂ Concentration (ppm)"}
+      {"orient": "bottom", "scale": "x", "title":"Year","tickCount":20, "grid": true},
+      {"orient": "left", "scale": "y", "grid": true, "title":"Atmospheric CO₂ Concentration (ppm)"}
     ],
     "marks":[
       {"type": "line",
