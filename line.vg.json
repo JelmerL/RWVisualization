@@ -1,48 +1,87 @@
 {
-    "$schema": "https://vega.github.io/schema/vega/v5.json",
-    "width": 800,
-    "height": 400,
-    "padding": 5,
-    "data": [
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "width": 800,
+  "height": 400,
+  "padding": 5,
+  "signals": [
+    {
+      "name": "xCrosshair",
+      "on": [
         {
-        "name": "table",
-        "url": "https://api.resourcewatch.org/v1/download/c1a22e2e-6b78-4ccd-b249-77ab0bd58bdd?sql=SELECT date,average  from cli_045_carbon_dioxide_concentration&format=json", 
-        "format":{"parse":"auto"},"transform": [{"type": "collect","sort":{"field": "date"}}]
+          "events": "mousemove",
+          "update": "x()"
         }
-      ],
-       "scales": [
+      ]
+    },
+    {
+      "name": "yCrosshair",
+      "on": [
+        {
+          "events": "mousemove",
+          "update": "y()"
+        }
+      ]
+    }
+  ],
+  "data": [
       {
-        "name": "x",
-        "type":"time",
-        "range": "width",
-        "nice":true,
-        "domain": {"data": "table", "field": "date"}
-      },
-      {
-        "name": "y",
-        "type": "linear",
-        "range": "height",
-        "nice":true,
-        "zero":false,
-        "domain": {"data": "table", "field": "average"}
+      "name": "table",
+      "url": "https://api.resourcewatch.org/v1/download/c1a22e2e-6b78-4ccd-b249-77ab0bd58bdd?sql=SELECT date,average  from cli_045_carbon_dioxide_concentration&format=json", "format":{"parse":"auto"},"transform": [{"type": "collect","sort":{"field": "date"}}]
       }
-    ],
-    "axes": [
-      {"orient": "bottom", "scale": "x", "title":"Year","tickCount":20, "grid": true},
-      {"orient": "left", "scale": "y", "grid": true, "title":"Atmospheric CO₂ Concentration (ppm)"}
-    ],
-    "marks":[
-      {"type": "line",
-        "from": {"data": "table"},
-        "encode": {
-          "enter": {
-            "interpolate": {"value": "linear"},
-            "x": {"scale": "x", "field": "date"},
-            "y": {"scale": "y", "field": "average"},
-            "stroke": {"value": "steelblue"},
-            "strokeWidth": {"value": 2}
-          }
+  ],
+     "scales": [
+    {
+      "name": "x",
+      "type":"time",
+      "range": "width",
+      "nice":true,
+      "domain": {"data": "table", "field": "date"}
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "range":"height",
+      "zero":false,
+      "nice":true,
+      "domain": {"data": "table", "field": "average"}
+    }
+  ],
+  "axes": [
+    {"orient": "bottom", "scale": "x", "title":"Year","tickCount":20, "grid":true},
+    {"orient": "left", "scale": "y","grid":true, "title":"Atmospheric CO₂ Concentration (ppm)"}
+  ],
+  "marks":[
+    {"type": "line",
+      "from": {"data": "table"},
+      "encode": {
+        "enter": {
+          "interpolate": {"value": "linear"},
+          "x": {"scale": "x", "field": "date"},
+          "y": {"scale": "y", "field": "average"},
+          "stroke": {"value": "steelblue"},
+          "strokeWidth": {"value": 2}
         }
       }
-    ]
-  }
+    },
+    {"type":"rule",
+      "encode":{
+        "update":{
+          "x":{"signal": "xCrosshair"},
+          "x2":{"signal": "xCrosshair"},
+          "y":{"value":0},
+          "y2":{"signal":"height"}
+        }
+      }
+    },
+    {"type":"rule",
+      "encode":{
+        "update":{
+          "x":{"value":0},
+          "x2":{"signal": "width"},
+          "y":{"signal": "yCrosshair"},
+          "y2":{"signal": "yCrosshair"}
+        }
+      }
+    }
+  ]
+}
