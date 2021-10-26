@@ -57,8 +57,9 @@
       "name": "x",
       "type":"time",
       "range": "width",
-      "nice":true,
-      "domain": {"data": "table", "field": "date"}
+      "nice":false,
+      "domain": {"data": "table", "field": "date"},
+      "padding":90
     },
     {
       "name": "y",
@@ -66,7 +67,8 @@
       "range":"height",
       "zero":false,
       "nice":true,
-      "domain": {"data": "table", "field": "average"}
+      "domain": {"data": "table", "field": "average"},
+      "padding":30
     }
   ],
   "axes": [
@@ -114,7 +116,7 @@
     "encode": {
         "update": {
           "x":{"signal": "xCrosshair", "offset":43},
-          "y":{"signal": "yCrosshair", "offset":15},
+          "y":{"signal": "yCrosshair", "offset":20},
           "text":{"signal":"CurrentDate"}
         }
       }
@@ -124,7 +126,7 @@
     "encode": {
         "update": {
           "x":{"signal": "xCrosshair", "offset":15},
-          "y":{"signal": "yCrosshair", "offset":15},
+          "y":{"signal": "yCrosshair", "offset":20},
           "text":{"value":["Year:"]}
         }
       }
@@ -134,8 +136,8 @@
     "encode": {
         "update": {
           "x":{"signal": "xCrosshair", "offset":15},
-          "y":{"signal": "yCrosshair", "offset":35},
-          "text":{"value":"CO2 (ppm):"}
+          "y":{"signal": "yCrosshair", "offset":40},
+          "text":{"value":"CO2 ppm:"}
         }
       }
     },
@@ -143,8 +145,8 @@
       "clip":true,
     "encode": {
         "update": {
-          "x":{"signal": "xCrosshair", "offset":75},
-          "y":{"signal": "yCrosshair", "offset":35},
+          "x":{"signal": "xCrosshair", "offset":70},
+          "y":{"signal": "yCrosshair", "offset":40},
           "text":{"signal":"PPM"}
         }
       }
