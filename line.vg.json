@@ -49,7 +49,8 @@
       }
   ],
   "title":{
-    "text":"Atmospheric concentration of CO₂ is increasing"
+    "text":"Atmospheric concentration of CO₂ is increasing",
+    "zindex": 100
   },
      "scales": [
     {
@@ -74,6 +75,7 @@
   ],
   "marks":[
     {"type": "line",
+      "clip":true,
       "from": {"data": "table"},
       "encode": {
         "enter": {
@@ -86,6 +88,7 @@
       }
     },
     {"type":"rule",
+      "clip":true,
       "encode":{
         "update":{
           "x":{"signal": "xCrosshair"},
@@ -96,6 +99,7 @@
       }
     },
     {"type":"rule",
+      "clip":true,
       "encode":{
         "update":{
           "x":{"value":0},
@@ -106,6 +110,7 @@
       }
     },
     {"type":"text",
+      "clip":true,
     "encode": {
         "update": {
           "x":{"signal": "xCrosshair", "offset":43},
@@ -115,6 +120,7 @@
       }
     },
     {"type":"text",
+      "clip":true,
     "encode": {
         "update": {
           "x":{"signal": "xCrosshair", "offset":15},
@@ -124,6 +130,7 @@
       }
     },
     {"type":"text",
+      "clip":true,
     "encode": {
         "update": {
           "x":{"signal": "xCrosshair", "offset":15},
@@ -133,6 +140,7 @@
       }
     },
     {"type":"text",
+      "clip":true,
     "encode": {
         "update": {
           "x":{"signal": "xCrosshair", "offset":75},

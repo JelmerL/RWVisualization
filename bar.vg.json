@@ -50,7 +50,8 @@
     "title":{
       "text":"Environmental Impact by Food Type (Calories)",
       "align":"center",
-      "baseline":"top"
+      "baseline":"top",
+      "zindex": 100
     },
     "marks": [
       {
