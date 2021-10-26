@@ -21,6 +21,25 @@
           "update": "y()"
         }
       ]
+    },
+    {
+      "name": "CurrentDate",
+      "update": "time('Jan 1 2005')",
+      "on": [
+        {
+          "events": "mousemove",
+          "update": "invert('x', clamp(x(), 0, width))"
+        }
+      ]
+    },    
+    {
+      "name": "PPM",
+      "on": [
+        {
+          "events": "mousemove",
+          "update": "invert('y', clamp(y(), 0, height))"
+        }
+      ]
     }
   ],
   "data": [
@@ -83,6 +102,24 @@
           "x2":{"signal": "width"},
           "y":{"signal": "yCrosshair"},
           "y2":{"signal": "yCrosshair"}
+        }
+      }
+    },
+    {"type":"text",
+    "encode": {
+        "update": {
+          "x":{"signal": "xCrosshair", "offset":15},
+          "y":{"signal": "yCrosshair", "offset":15},
+          "text":{"signal":"CurrentDate"}
+        }
+      }
+    },
+    {"type":"text",
+    "encode": {
+        "update": {
+          "x":{"signal": "xCrosshair", "offset":15},
+          "y":{"signal": "yCrosshair", "offset":50},
+          "text":{"signal":"PPM"}
         }
       }
     }
