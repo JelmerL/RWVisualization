@@ -137,7 +137,7 @@
         "update": {
           "x":{"signal": "xCrosshair", "offset":15},
           "y":{"signal": "yCrosshair", "offset":40},
-          "text":{"value":"CO2 ppm:"}
+          "text":{"value":"CO₂ ppm:"}
         }
       }
     },
