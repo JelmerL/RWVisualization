@@ -49,7 +49,7 @@
       }
   ],
   "title":{
-    "text":"Atmospheric concentration of CO₂ is increasing",
+    "text":"Atmospheric CO₂ Concentration (ppm) is increasing",
     "zindex": 100
   },
      "scales": [
